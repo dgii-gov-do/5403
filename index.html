@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Documentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #6BBD07;
+            color: #00008B;
+            padding: 30px;
+            text-align: left;
+            font-size: 2em;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .header::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+        }
+
+        .header-text {
+            margin-left: 192px; /* Ajuste de margen para mover dos pulgadas hacia la derecha (aprox.) */
+            color: #00008B; /* Color azul oscuro */
+        }
+
+        .subheader {
+            color: #FFA000;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .subheader-text {
+            margin-left: 30px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.4em;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f2f2f2;
+            font-size: 1.6em;
+        }
+
+        .gray-column {
+            background-color: rgba(200, 200, 200, 0.7);
+            width: 1in;
+        }
+
+        .white-column {
+            background-color: #ffffff;
+            padding-left: 5px;
+        }
+
+        .footer {
+            background-color: #ddd;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 15px;
+                font-size: 1.5em;
+            }
+
+            .header-text {
+                margin-left: 0;
+            }
+
+            .subheader {
+                font-size: 1.2em;
+            }
+
+            .subheader-text {
+                margin-left: 10px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px;
+            }
+
+            .data-table th {
+                font-size: 1.2em;
+            }
+
+            .data-table td {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-text">PLACA PROVISIONAL</div>
+    </div>
+    <div class="container">
+        <div class="subheader">
+            <div class="subheader-text">Sistema Datamatrix</div>
+            <div class="subheader-text"><font color="green">Validación de Documentos</font></div>
+        </div>
+        <table class="data-table">
+            <tbody>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Código</th>
+                    <td class="white-column" style="font-size: 1.4em;">gk8tlxy</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Placa</th>
+                    <td class="white-column" style="font-size: 1.4em;">PP734491</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Tipo de<br>Vehículo</th>
+                    <td class="white-column" style="font-size: 1.4em;">AUTOMÓVIL</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Marca</th>
+                    <td class="white-column" style="font-size: 1.4em;">HONDA</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Modelo</th>
+                    <td class="white-column" style="font-size: 1.4em;">ACCORD LX</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Color</th>
+                    <td class="white-column" style="font-size: 1.4em;">GRIS</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Año</th>
+                    <td class="white-column" style="font-size: 1.4em;">2020</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Chasis</th>
+                    <td class="white-column" style="font-size: 1.4em;">1HGCV1F17LA101931</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Fecha de<br>Emisión</th>
+                    <td class="white-column" style="font-size: 1.4em;">24/06/2024</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Fecha de<br>Expiración</th>
+                    <td class="white-column" style="font-size: 1.4em;">22/09/2024</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Razón Social /<br>Nombre del<br>Importador</th>
+                    <td class="white-column" style="font-size: 1.4em;">GCIAJ AUTO IMPORT EIRL</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">RNC/Cédula del<br>Importador</th>
+                    <td class="white-column" style="font-size: 1.4em;">131702783</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">Razón Social /<br>Nombre del<br>Comprador</th>
+                    <td class="white-column" style="font-size: 1.4em;">FRANCISCO ANTONIO MARTÍNEZ</td>
+                </tr>
+                <tr>
+                    <th class="gray-column" style="font-size: 1.6em;">RNC/Cédula del<br>Comprador</th>
+                    <td class="white-column" style="font-size: 1.4em;">10600021553</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        Dirección General de Impuestos Internos.
+    </div>
+</body>
+
+</html>
